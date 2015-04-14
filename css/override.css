@@ -1,0 +1,57 @@
+html .overlay h1,
+html .overlay h2,
+html .overlay h3,
+html .overlay p,
+html .overlay .credit,
+html .overlay .license {
+	background-color: rgba(100,100,100,0.8);
+  color: #fff;
+}
+
+
+
+html .overlay h1 { padding: 0.1em; }
+html .overlay h2 { padding: 0.1em; }
+html .overlay h3 { padding: 0.1em; }
+html .overlay p { padding: 0.1em; }
+
+.slides .credit {
+  position: fixed;
+  bottom: -1em;
+  display: block;
+  left: 35%;
+  font-size: 60%;
+  padding: 0.2em;
+}
+.slides .license {
+  position: fixed;
+  bottom: -40%;
+  display: block;
+  right: 0%;
+  font-size: 70%;
+  padding: 0.2em;
+}
+.slides .license img {
+  margin: auto;
+  vertical-align: sub;
+}
+
+.reveal h1 { font-size: 3.2em; }
+.reveal p { margin-top: 0.3em; }
+.reveal li { margin-top: 0.2em; }
+
+.reveal .left h1,
+.reveal .left h2,
+.reveal .left h3,
+.reveal .left p { text-align: left; margin-left: 15%; }
+/*.reveal .left ul,
+.reveal .left ol { margin-left: 0%; }*/
+.reveal .left ul li,
+.reveal .left ol li { padding-left: 0.2em;}
+.reveal .left ol { margin-left: 20%; }
+
+.reveal .right img { float: right; margin: 0px 5% 0.5em 0.1em;}
+
+#notes {
+  font-size: 14px;
+}
