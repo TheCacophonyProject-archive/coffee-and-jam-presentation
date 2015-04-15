@@ -25,7 +25,11 @@ html .overlay p { padding: 0.1em; }
 }
 
 .slides .credit.fullpage {
-	bottom: -12em;
+	bottom: -10em;
+}
+
+.slides .credit#donut {
+	bottom: -8em;
 }
 
 .slides .license, .slides .affiliation {
