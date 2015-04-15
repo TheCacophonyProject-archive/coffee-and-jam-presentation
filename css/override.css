@@ -23,17 +23,39 @@ html .overlay p { padding: 0.1em; }
   font-size: 60%;
   padding: 0.2em;
 }
-.slides .license {
+
+.slides .credit.fullpage {
+	bottom: -12em;
+}
+
+.slides .license, .slides .affiliation {
   position: fixed;
   bottom: -40%;
   display: block;
-  right: 0%;
   font-size: 70%;
   padding: 0.2em;
 }
-.slides .license img {
+
+.slides .affiliation {
+  left: 0%;
+}
+
+.slides .affiliation img.logo {
+	box-shadow: none;
+	background: none;
+}
+
+.slides .license {
+  right: 0%;
+}
+
+.slides .license img, .slides .affiliation img {
   margin: auto;
   vertical-align: sub;
+}
+
+.slides p.quote {
+	font-size: 2em;
 }
 
 .reveal h1 { font-size: 3.2em; }
