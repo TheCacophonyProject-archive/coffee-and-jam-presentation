@@ -24,6 +24,11 @@ html .overlay p { padding: 0.1em; }
   padding: 0.2em;
 }
 
+.slides .fineprint {
+    font-size: 60%;
+    color: #bbb;
+}
+
 .slides .credit.fullpage {
 	bottom: -10em;
 }
