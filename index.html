@@ -30,9 +30,30 @@
 				link.type = 'text/css';
 				link.href = 'css/print/pdf.css';
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf-override.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
 		</script>
+		<!-- If the query includes 'print-pdf-notes', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf-notes/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
 
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf-notes-override.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -56,11 +77,15 @@
 					</p>
 					<p>This presentation online: <a href="http://pres.lane.net.nz/what-is-open">http://pres.lane.net.nz/what-is-open</a></p>
 
-					<div class="affiliation"><a class="logo" href="http://nzoss.org.nz"><img class="logo" alt="NZ Open Source Society Logo" style="border-width:0" src="media/nzoss-logo.png" /></a>
+					<div class="footer">
+						<div class="affiliation"><a class="logo" href="http://nzoss.org.nz"><img class="logo" alt="NZ Open Source Society Logo" style="border-width:0" src="media/nzoss-logo.png" /></a>
+						</div>
+						<div class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+						</div>
+						<div class="anchor" />
 					</div>
-					<div class="license"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-					</div>
-                    <div class="fineprint">Hit the "s" key in a standards compliant browser to show my speaker's notes</div>
+          <div class="fineprint">Hit the "s" key in a standards compliant browser to show my speaker's notes</div>
+
 					<aside class="notes">
 						<p>My task today is to define a word which looms large at this conference, making up fully half of the words in its title. Everybody has a sense of what "Open" means, but that sense differs depending on who you talk to and depending on the context.</p>
 						<p>Like many words, notably words like "natural" or "low-fat" the word "open" has been leapt upon by marketers who have identified that its meaning is vague enough that it can be stretched in the public arena to convey positive connotations about products don't deserve them. They have succeeded in diluting the word "open" still further, to the extent that some of us have become a bit cynical, even suffering from "open fatigue".</p>
@@ -71,9 +96,9 @@
 				<section data-state="first" class="full-image overlay" data-background="media/kindy_kids.jpg">
 					<p class="fragment quote">"Share and share alike"</p>
 
-					<div class="credit fullpage">
+					<div class="footer"><div class="credit fullpage">
 						Image Source: <a href="https://www.flickr.com/photos/wwworks/2799242490/">woodlywonderworks</a>
-					</div>
+					</div></div>
 
 					<aside class="notes">
 						<p>That essence is a virtuous characteristic that ever child in kindergarten learns... and then, for the remainder of their education and beyond, they're conditioned to feel bad about it.</p>
@@ -88,9 +113,9 @@
 					<p class="fragment">Not just the "what"...</p>
 					<p class="fragment">Also need the "how"</span><span class="fragment">, "why"</span><span class="fragment">, and "what if".</span></p>
 
-					<div class="credit" id="donut">
+					<div class="footer"><div class="credit">
 						Image Source: <a href="https://www.flickr.com/photos/stevenlaurie/9456405788/">Steve Laurie</a>
-					</div>
+					</div></div>
 
 					<aside class="notes">
 						<p>These principles start with transparency... but while it's necessary, it's not enough to qualify as "Open".</p>
@@ -158,9 +183,9 @@
 					<h1>Public Libraries</h1>
 					<p class="fragment">Open and sharing long before it was cool.</p>
 
-					<div class="credit fullpage">
+					<div class="footer"><div class="credit fullpage">
 							Image Source: <a href="https://www.flickr.com/photos/spam/5086159481/">Samantha Marx</a>
-					</div>
+					</div></div>
 
 					<aside class="notes">
 						<p></p>
@@ -215,7 +240,11 @@
 				]
 			});
 
-			Reveal.configure({ slideNumber: true });
+			Reveal.configure(
+				{ slideNumber: true,
+					keyboard: {39: 'next',37: 'prev'}
+				}
+			);
 		</script>
 
 	</body>

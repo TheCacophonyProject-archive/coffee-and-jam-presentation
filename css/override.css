@@ -4,49 +4,74 @@ html .overlay h3,
 html .overlay p,
 html .overlay .credit,
 html .overlay .license {
-	background-color: rgba(100,100,100,0.8);
+  background-color: rgba(100,100,100,0.8);
   color: #fff;
 }
-
-
 
 html .overlay h1 { padding: 0.1em; }
 html .overlay h2 { padding: 0.1em; }
 html .overlay h3 { padding: 0.1em; }
 html .overlay p { padding: 0.1em; }
+html .overlay a, html .overlay a:not(.image) { color: #90BCDB; }
 
-.slides .credit {
-  position: fixed;
-  bottom: -1em;
-  display: block;
-  left: 35%;
-  font-size: 60%;
-  padding: 0.2em;
+div.anchor {
+  float:none;
+  clear:both;
+  line-height:0;
+  font-size:0;
+}
+
+.slides section {
+	height: 100%;
 }
 
 .slides .fineprint {
-    font-size: 60%;
-    color: #bbb;
+	position: relative;
+	bottom: 0;
+  font-size: 60%;
+  color: #bbb;
 }
 
-.slides .credit.fullpage {
-	bottom: -10em;
+/*.slides .credit.fullpage {
+	position: relative;
+	bottom: -1em;
 }
 
 .slides .credit#donut {
-	bottom: -8em;
+	position: relative;
+	bottom: -1em;
+}*/
+
+.slides .footer {
+  position: absolute;
+	bottom: 1em;
+	/*margin: auto;*/
+	vertical-align: middle;
+	left: auto;
+	right: auto;
+	width: 100%;
+  display: block;
+	/*height: 150px;*/
+	/*border: 1px white solid;*/
+}
+
+.slides .credit {
+	position: relative;
+	bottom: 0;
+	font-size: 60%;
+  padding: 0.2em;
+	margin: auto;
+	display: block;
 }
 
 .slides .license, .slides .affiliation {
-  position: fixed;
-  bottom: -40%;
-  display: block;
+  /*display: block;*/
   font-size: 70%;
   padding: 0.2em;
 }
 
 .slides .affiliation {
-  left: 0%;
+  float: left;
 }
 
 .slides .affiliation img.logo {
@@ -55,7 +80,7 @@ html .overlay p { padding: 0.1em; }
 }
 
 .slides .license {
-  right: 0%;
+  float: right;
 }
 
 .slides .license img, .slides .affiliation img {

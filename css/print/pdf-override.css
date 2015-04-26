@@ -1,0 +1,21 @@
+/* override print-pdf styles */
+body {
+  height: 210mm;
+	width: 297mm;
+}
+
+@page {
+	size: a4 landscape;
+	margin: 0;
+}
+
+.slides {
+  text-align: center;
+}
+.slides .footer {
+  position: absolute;
+  bottom: 0px;
+	vertical-align: middle;
+	width: 50%;
+  display: block;
+}
