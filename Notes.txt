@@ -1,32 +1,56 @@
 Open Standards Talk
 
+--
+
 How many of you have a drawer like this at home? [Snarl of adapters]
 
 How many of you remember making phone purchasing decisions not based on which phone offered you the best value, but which phone best worked with your existing constellation of vastly overpriced chargers and accessories? Can you remember paying $50-$100 for specific chargers and adapters for your phone? Or not being able ot charge them on holiday because you brought the wrong adapter by mistake? Running out of power points due to the plethora of different "wallwarts" you needed to service your array of devices which each had their own proprietary (or needlessly different) system?
 
+--
+
 How many of you have noticed that this isn't so much of a problem any more? (ok, everybody but the Apple users)... Did you ever wonder why this suddenly became ubiquitous a couple years ago? [media/micro_usb.jpg]. This is a micro USB connector. 
 
-I can get one of these cables that will charge my newer phone from my computer for <a href="http://www.banggood.com/Small-Noodle-Short-USB-Data-Cable-Charging-Cable-For-Mobile-Phones-p-82583.html">NZ$1.36 delivered to my door</a> [media/micro_usb_cable_advert.png].  The design of this plug is an <a href="https://en.wikipedia.org/wiki/USB">open standard</a>. Anyone can build cables and sockets that use this design without paying royalties or fearing patent infringement lawsuits. They don't even need permission. 
+--
+
+[] I can get one of these cables that will charge my newer phone from my computer for <a href="http://www.banggood.com/Small-Noodle-Short-USB-Data-Cable-Charging-Cable-For-Mobile-Phones-p-82583.html">NZ$1.36 delivered to my door</a> [media/micro_usb_cable_advert.png].  The design of this plug is an <a href="https://en.wikipedia.org/wiki/USB">open standard</a>. Anyone can build cables and sockets that use this design without paying royalties or fearing patent infringement lawsuits. They don't even need permission. 
+
+--
 
 What is an Open Standard? 
 Depending on who you ask, you'll get different definitions of open standards. I personally believe there are things that we can do as a society that improve the wellbeing and quality of life for everyone equally - for the "greater good". Things like building and maintaining public roads. Fire and ambulance service. I won't mention EQC to people in Chch (hah!). The public education and health systems. A "greater good" few people are conscious of is the open standards that surround us. All of these things have a cost to society in the form of taxes, but they actually create entirely new efficiences, markets, and opportunities and incentives for businesses to innovate.
 
-Let's consider some:
-- consider the metric system - as a brief digression, has anyone ever considered the vast waste of resources caused by the US' (and to a lesser extent the UK's) obstinate refusal to let go of the American Standard system of measurement (simliar to Imperial units, but not quite the same)? Think about how many of you have both metric and imperial spanners, socket sets, allen keys, and any number of other tools. Look at the fastern section at your local hardware store sometime. The waste through near duplication is staggering, and it's global. There's no <em>functional</em> justification for maintaining a separate system - it's just inertia and provincial hubris. My homeland is the source of more than a few facepalms.
+--
+
+Let's consider the metric system [double standard] - as a brief digression, has anyone ever considered the vast waste of resources caused by the US' (and to a lesser extent the UK's) obstinate refusal to let go of the American Standard system of measurement (simliar to Imperial units, but not quite the same)? Think about how many of you have both metric and imperial spanners, socket sets, allen keys, and any number of other tools. Look at the fastern section at your local hardware store sometime. The waste through near duplication is staggering, and it's global. There's no <em>functional</em> justification for maintaining a separate system - it's just inertia and provincial hubris. My homeland is the source of more than a few facepalms.
 
 We've got problems with competing standards - look at the hassles of different plug designs and the competition between 220V AC @ 50Hz and 110V AC @ 60Hz. Thankfully open standard AC/DC converters that can handle that range for most of our electronic devices these days. 
 
+--
+
 Open standards offer us something called "<a href="http://www.circleid.com/posts/20140424_permissionless_innovation_why_it_matters/">permissionless innovation</a>". If you want to, you can manufacture a micro-USB powered device and sell it, without asking anyone's permission, as long as you comply with the standard. That's easy for independent organisations to measure. You can build your innovative new gadget around a micro-USB charging system without worrying that someone will sue you for patent infringement for doing so, or charge you royalties for using their standard, deny you the right to use the micro-USB standard if it suits their strategic interests to do so, or that the standard will change out from under you without a well controlled process that brings you along for the ride. 
+
+--
 
 I think these examples provide ample and undeniable evidence of the benefits and value agreed open standards bring to entire societies. They're like the "rising tide which lifts all boats". They're essentially the giant shoulders on which new generations of innovators can stand. 
 
+--
+
 Sadly, however, if you want to compete with most of the major software products our government, and most businesses, schools, organisation, etc. use, the same is not true. 
 
-Remember my point about the different electrical system AC voltages and frequencies and plug designs in use in the world, and how much trouble that causes? Well at least those are all open standards that have been adopted, for the most part, on a national level. Imagine if every power generator picked whatever voltage and frequency and plug design suited them on the day? Imagine how hard it would be to build any sort of electronic product. 
+Remember my point about the different electrical system AC voltages and frequencies and plug designs in use in the world, and how much waste and inefficiency a few different standards causes? Well at least those are all open standards that have been adopted, for the most part, on a national level. Imagine if there were <em>no</em> standards... if every power generator picked whatever voltage and frequency and plug design suited them on the day? Imagine how hard it would be to build anything sort of  product to work with such an unstable marketplace. 
 
-That's precisely the situation with the most commonly used software. Imagine that the digital artefacts produced by software we use today - particularly file formats, but also APIs, protocols - are arbitrary proprietary standards. Software suppliers will bang on about how open standards inpinge on their ability to "innovate" but make no mistake: they desperatedly want to dictate the format, and they want to use it to hobble would-be competitors, leverage the network effect and create a monopoly they can lock-in and exploit for as long as possible. 
+Proprietary software is alergic to standards
+
+That's precisely the situation with the most commonly used software. Imagine that the digital artefacts produced by software we use today - particularly file formats, but also APIs, protocols - are arbitrary proprietary standards. Software suppliers will bang on about how open standards inpinge on their ability to "innovate" but make no mistake: they desperatedly want to dictate the format, and they want to use it to hobble would-be competitors, leverage the network effect and create a monopoly they can lock-in and exploit for as long as possible. [Bill gates image] 
+
+--
+Compatibility is key to competition
 
 In most cases, if you want to compete with market leaders in various end-user software domains - all multinational corporations like Microsoft, Adobe, Apple, Oracle, SAP, ESRI, and others, then you either have to somehow offer a product that is compatible with their proprietary format standards. If you are another huge corporation, you might be able to buy permission to do that, maybe... or invest huge amounts of energy trying to reverse engineer their proprietary standards. And if, against all odds, you succeed, all they need to do is issue an update that subtly changes that proprietary standard, completely breaking your compatibility. 
+
+--
+
+The government requires us to communicate with it in order to do business with it. And they use these proprietary formats [GETS images] - by requiring us to use these templates, for example, the government <em>implicitly mandatings that private industry use Microsoft Office</em>. That's anti-competitive. 
 
 Ultimately, proprietary standards are a mechanism for achieving "lock-in". Consider <a href="http://antitrust.slated.org/www.iowaconsumercase.org/011607/2000/PX02991.pdf">this email</a>, used in evidence in a <a href="http://www.groklaw.net/staticpages/index.php?page=2007021720190018">class action suit against Microsoft back in 2006</a> [BGatesEmailReProprietaryStds.png] Companies like Microsoft knew their monopoly profits absolutely depended on maintaining proprietary control of formats in 1996, and no doubt well before that. And of course, the goal of <em>every</em> corporation is to achieve a market monopoly it can exploit to maximise its profits. Corporate suppliers of proprietary software will <strong>never</strong> voluntarily adopt open standards. They'll only do it under extreme circumstances... the same sort that caused all the phone manufacturers to adopt micro-USB: government regulation.
 
