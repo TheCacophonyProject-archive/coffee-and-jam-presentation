@@ -1,3 +1,7 @@
+body {
+  background-color: #fff;
+}
+
 html .overlay h1,
 html .overlay h2,
 html .overlay h3,
@@ -96,6 +100,14 @@ div.anchor {
 .reveal p { margin-top: 0.3em; }
 .reveal li { margin-top: 0.2em; }
 
+.reveal h2 {
+  margin-top: 1em;
+}
+.reveal h2:first-of-type {
+  margin-top: 0;
+}
+
+
 .reveal .left h1,
 .reveal .left h2,
 .reveal .left h3,
@@ -107,6 +119,11 @@ div.anchor {
 .reveal .left ol { margin-left: 20%; }
 
 .reveal .right img { float: right; margin: 0px 5% 0.5em 0.1em;}
+
+.reveal section img, .reveal section img:hover {
+  box-shadow: none;
+}
+
 
 #notes {
   font-size: 14px;
